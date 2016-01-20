@@ -41,8 +41,6 @@ class ProductsController < ApplicationController
 
   private
   def product_params
-    params.require(:product).permit(:name, :price).tap do |whitelisted|
-    whitelisted[:category_ids] = params[:product][:category_ids]
-    end
+    params.require(:product).permit(:name, :price, category_ids: [])
   end
 end

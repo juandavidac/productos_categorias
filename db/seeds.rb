@@ -19,5 +19,3 @@ juguetes=Category.create(name: "Juguetes")
 ropa=Category.create(name: "Ropa")
 oficina=Category.create(name: "Oficina")
 mascotas=Category.create(name: "Mascotas")
-
-Product.create( name: "Computador", price: "200", categories: Category.where(name:["Tecnología", "Oficina"]) )
